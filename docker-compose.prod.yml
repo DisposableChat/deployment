@@ -27,7 +27,7 @@ services:
   # API
 
   auth:
-    build: ./auth
+    build: ./api-auth
     container_name: auth_api
     networks:
       working:
@@ -38,7 +38,7 @@ services:
       - api.production.env
 
   users:
-    build: ./users
+    build: ./api-users
     container_name: users_api
     networks:
       working:

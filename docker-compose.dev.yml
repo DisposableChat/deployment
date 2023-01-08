@@ -27,7 +27,7 @@ services:
   # API
 
   auth:
-    build: ./auth
+    build: ../api-auth
     container_name: auth_api
     networks:
       working:
@@ -42,7 +42,7 @@ services:
       - "5001:8080"
 
   users:
-    build: ./users
+    build: ../api-users
     container_name: users_api
     networks:
       working:
