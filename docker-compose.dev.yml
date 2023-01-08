@@ -35,7 +35,7 @@ services:
     depends_on:
       - redis_db
     env_file:
-      - api.production.env
+      - api.dev.env
     volumes:
       - ssl:/etc/ssl
     ports:
@@ -50,7 +50,7 @@ services:
     depends_on:
       - redis_db
     env_file:
-      - api.production.env
+      - api.dev.env
     volumes:
       - ssl:/etc/ssl
     ports:

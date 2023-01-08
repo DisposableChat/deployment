@@ -2,7 +2,7 @@
 
 Enviroment Variables
 
-Create a file named api.production.env
+Template has to be api.production.env
 ```go
 REDIS_HOST=172.20.0.3 // Configured in network creation in production.mk
 REDIS_PORT=6379 // default redis port
@@ -16,7 +16,18 @@ SSL_CERTIFICATE_PATH=/etc/ssl/cert.pem // Into docker container path
 SSL_CERTIFICATE_KEY_PATH=/etc/ssl/priv.key // Into docker container path
 ```
 
-or
+# Clone API modules
+
+In a same folder
+
+```
+-api
+    -api-auth
+    -api-users
+    -deployment (this repo)
+```
+
+# Run
 
 Production
 
