@@ -51,7 +51,7 @@ services:
 networks:
   working:
     driver: external
-    name: devnet
+    name: appnet # This change from devnet to appnet
 
 volumes:
   cache:
