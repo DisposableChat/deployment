@@ -1,0 +1,10 @@
+*.pem
+*.key
+auth/
+core/
+groups/
+messages/
+notifications/
+users/
+websocket/
+*.env
