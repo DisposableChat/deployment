@@ -1,8 +1,13 @@
 # How
 
-Enviroment Variables
+## Requirements
 
-Template has to be api.production.env
+- Unix based OS
+- [Docker](https://docs.docker.com/engine/install/ubuntu/)
+
+## Enviroment Variables
+
+this template need to be into a file named api.production.env and api.dev.env
 ```go
 REDIS_HOST=172.20.0.3 // Configured in network creation in production.mk
 REDIS_PORT=6379 // default redis port
@@ -16,7 +21,7 @@ SSL_CERTIFICATE_PATH=/etc/ssl/cert.pem // Into docker container path
 SSL_CERTIFICATE_KEY_PATH=/etc/ssl/priv.key // Into docker container path
 ```
 
-# Clone API modules
+## Clone API modules
 
 In a same folder
 
@@ -27,7 +32,7 @@ In a same folder
     -deployment (this repo)
 ```
 
-# Run
+## Run
 
 Production
 
@@ -41,8 +46,3 @@ Development
 make -f dev.mk // Build everything from scratch again
 make -f fast.dev.mk // Run default
 ```
-
-## Requirements
-
-- Unix based OS
-- [Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
