@@ -101,7 +101,7 @@ services:
 
 networks:
   working:
-    driver: external
+    external: true
     name: devnet
 #    ipam:
 #      config:
